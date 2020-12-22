@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+<!-- 
+    Form tag
+    input tag for createing input field
+
+types of input fields
+Radio button
+Text
+Number
+Email
+Password
+Datalist
+Dropdown
+checkbox
+
+-->
+<h1 style="background-color: green; padding: 15px;">Heading</h1>
+
+    <form>
+        <label>First Name</label>
+        <input type="text" required><br>
+
+        <label for="salary">
+            Salary
+        </label>
+
+        <input id="salary" type="number"> <br>
+
+        <label for="email">Email</label>
+        <input id="email" type="email" required>
+
+        <label>Password</label>
+        <input type="password"><br>
+
+        <label for="date">Date</label>
+        <input type="date"><br>
+<label >Gender</label>
+<label for="gender">Male</label>
+        <input  type="radio">
+
+        <label>Female</label>
+        <input  type="radio">
+
+        <label>Other</label>
+        <input name= "gender" type="radio"><br>
+
+        <label for="lang">languages</label>
+
+        <label for="">English</label>
+        <input type="checkbox"><br>
+
+        <label for="">Marathi</label>
+        <input type="checkbox"><br>
+
+        <label for="">Hindi</label>
+        <input type="checkbox"><br>
+
+        <label for="run">Run</label>
+        <input id="run"
+        type="button" value="Run" >
+        
+        <button>Red</button>
+
+        <select name="tech" id="tech">
+            <option value="java">Java</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+        </select>
+<!-- 
+for creating a datalist we have to write list attribute inside input field 
+And the value of input field should be same to datalist id-->
+
+        <input type="text" list="names">
+            <datalist id="names">
+                <option>Sanket</option>
+                <option>Rahul</option>
+                <option>Swati</option>
+                <option>Rushi</option>
+            </datalist><br>
+
+<label for="">Marks obtained</label>
+        <input type="text">
+
+        
+        <input type="text" value="100" readonly>
+
+        <input type="text" value="300" disabled>
+
+        <input type="reset">
+
+
+
+
+        <input type="submit">
+    </form>
+</body>
+</html>

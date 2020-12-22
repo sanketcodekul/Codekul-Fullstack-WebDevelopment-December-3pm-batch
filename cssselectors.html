@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* header h2 {
+             color: aqua;
+         } */
+
+        /* ul > li {
+             background-color: blue;
+         } */
+
+        /* ol > li {
+background-color: chartreuse;
+         } */
+
+        /* body li {
+             background-color: crimson;
+         } */
+
+        /* div + p {
+  background-color: yellow;
+}
+
+p ~ ul {
+  background: #ff0000;
+}  */
+
+*{
+    background-color: lightseagreen;
+}
+
+        ul li {
+            background-color: rgb(60, 210, 30);
+        }
+
+        span {
+            background-color: crimson;
+        }
+
+
+        /* section ul li{
+    background-color: darkblue;
+} */
+
+        div ul>li#one {
+            background-color: deeppink;
+        }
+
+
+        section.one {
+            font-size: x-large;
+            font-style: italic;
+        }
+
+        header.head {
+            background-color: deepskyblue;
+        }
+
+        section .sports {
+            background-color: gold;
+        }
+
+
+       section #paragraph {
+            text-decoration: underline;
+            color: greenyellow;
+            background-color: indigo;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Types of Selectors
+    1.Type/Element Selector
+    2. Class Selectors syntax: .classname {properties}
+    3. Id Selectors
+    4. Attribute Selector
+    5. Universal Selectors
+
+
+whenever we use class of an element write element.classname
+we cannot use element.classname for the same element
+element .classname descendant with class selector
+element element  descendant selector
+
+    Combinators 
+
+    Child Selector symbol >
+    syntax: Parent element > Direct child 
+
+
+Descendent Selector symbol space 
+syntax: Parent element targrtedelement -->
+
+
+
+
+    <header class="head">
+
+        <h1>
+            Heading
+        </h1>
+
+        <h2>Articles Blog</h2>
+
+    </header>
+
+    <section class="sect">
+        <p class="sports">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur accusamus
+            illo rem, sunt ex atque repellendus, soluta provident possimus cumque. Nihil voluptates omnis aperiam libero
+            culpa nostrum optio. Quidem.</p>
+    </section>
+
+
+    <address class="sect">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste veniam eligendi officiis earum magni pariatur
+        dicta soluta, similique voluptas enim tempore ab aliquam suscipit rem consequuntur cupiditate dolorem quod esse.
+    </address>
+    <p>
+
+        <div>
+            <ul>
+                <li id="one">one</li>
+                <li>two</li>
+                <li>three</li>
+            </ul>
+        </div>
+    
+    </p>
+
+    <section>
+
+    </section>
+
+
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+
+    <ol>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ol>
+
+
+
+    <section class="one">
+        <p> <span>Paragraph</span> inside header
+
+        </p>
+    </section>
+
+
+    <section class="two">
+        <p>In paragraph of section</p>
+
+        <ul>
+            <li>List inside paragrapg</li>
+            <li>HHJKK</li>
+        </ul>
+
+
+    </section>
+
+    <section>
+        <div id="paragraph">
+            <p>Paragraph 1 in the div.</p>
+            <p>Paragraph 2 in the div.</p>
+        </div>
+    </section>
+   
+
+    <p>Paragraph 3. After a div.</p>
+    <p>Paragraph 4. After a div.</p>
+
+    <div>
+        <p>Paragraph 5 in the div.</p>
+        <p>Paragraph 6 in the div.</p>
+    </div>
+
+    <p>Paragraph 7. After a div.</p>
+    <p>Paragraph 8. After a div.</p>
+
+    <p>The first paragraph.</p>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+</body>
+
+</html>

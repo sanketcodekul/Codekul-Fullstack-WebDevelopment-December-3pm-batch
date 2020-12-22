@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title> </title>
+    <style type="text/css">
+      input[type="checkbox"]:required:invalid + label {
+        color: red;
+      }
+      input[type="checkbox"]:required:valid + label {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <form name="registration">
+      <fieldset>
+        <legend>Registration form</legend>
+        <ul>
+          <label for="userid">User id [5 to 12 characters] :</label>
+
+          <input type="text" name="userid" size="12" />
+          <br />
+
+          <label for="passid">Password [7 to 12 characters] :</label>
+
+          <input type="password" name="passid" size="12" />
+          <br />
+
+          <label for="username">Name [Alphabates characters] :</label>
+
+          <input type="text" name="username" size="50" />
+          <br />
+
+          <label for="address">Address [alphanumeric characters] :</label>
+
+          <input type="text" name="address" size="50" />
+          <br />
+
+          <label for="country">Country [Must select a country] :</label>
+
+          <select name="country">
+            <option selected="" value="Default">
+              (Please select a country)
+            </option>
+            <option value="AF">Australia</option>
+            <option value="AL">Canada</option>
+            <option value="DZ">India</option>
+            <option value="AS">Russia</option>
+            <option value="AD">USA</option>
+          </select>
+
+          <br />
+
+          <label for="zip">ZIP Code [numeric characters] :</label>
+          <input type="text" name="zip" />
+          <br />
+          <label for="email">Email [Valid email] :</label>
+
+          <input type="text" name="email" size="50" /><br />
+
+          <label id="gender">Sex [Select Male or Female] :</label>
+
+          <input type="radio" name="sex" value="Male" checked /><span
+            >Male</span
+          >
+
+          <input type="radio" name="sex" value="Female" /><span>Female</span>
+          <br />
+
+          <label>Language [Optional] :</label>
+
+          <input type="checkbox" name="en" value="en" checked /><span
+            >English</span
+          >
+
+          <input type="checkbox" name="nonen" value="noen" /><span
+            >Non English</span
+          >
+          <br />
+
+          <label for="desc">About [Optional] :</label>
+          <textarea name="desc" id="desc"></textarea>
+          <br />
+
+          <input
+            type="submit"
+            name="submit"
+            value="Submit"
+            onclick="alert('Form submitted successfully')"
+          />
+        </ul>
+        <p>
+          <input id="field_terms" type="checkbox" required name="terms" />
+          <label for="field_terms"
+            >I accept the <u>Terms and Conditions</u></label
+          >
+        </p>
+
+        <input type="text" pattern="[A-Z]{3}">
+      </fieldset>
+    </form>
+
+    
+    <script>
+      function send() {
+        var genders = document.getElementsByName("gender");
+        if (genders[0].checked == true) {
+          alert("Your gender is male");
+        } else if (genders[1].checked == true) {
+          alert("Your gender is female");
+        } else {
+          // no checked
+          var msg =
+            '<span style="color:red;">You must select your gender!</span><br /><br />';
+          document.getElementById("msg").innerHTML = msg;
+          return false;
+        }
+        return true;
+      }
+
+      function reset_msg() {
+        document.getElementById("msg").innerHTML = "";
+      }
+    </script>
+  </body>
+</html>

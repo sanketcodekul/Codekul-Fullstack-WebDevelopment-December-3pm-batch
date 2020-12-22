@@ -1,0 +1,141 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Basics</title>
+
+    <style>
+
+        table{
+            height: 600px;
+            width: 600px;
+            text-align: center;
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        #two{
+height: 800px;
+width: 1200px;
+        }
+        td,th {
+            border: solid black 2px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>We will be learning about tables in HTML</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis vitae
+      soluta maxime dicta laborum facere aliquam harum, ullam error amet?
+      Tenetur cum qui at modi similique ut dolorem reiciendis eius?
+    </p>
+
+<!--    <table> tag is used to create a table.
+         <tr> tag is used to create a row
+         <th> tag is used to create a cell which consists of heading
+        <td> tag is used to write data inside the cell 
+        <caption> tag is used to write a caption for the table 
+            
+        colspan and rowspan attributes 
+        colspan attribute is used for spanning the cell according to columns
+    rowspan attribute is used for spanning the cell according to rows
+
+    <colgroup> tag is used for grouping of columns
+-->
+
+<caption>Basic table in HTML</caption>
+    <table id="one">
+<tr>
+    <td>a</td>
+    <td colspan="2">b</td>
+    <td rowspan="3">i</td>
+</tr>
+
+<tr>
+    <td>c</td>
+    <td>d</td>
+    <td>e</td>
+</tr>
+
+<tr>
+    <td>f</td>
+    <td>g</td>
+    <td>h</td>
+    
+</tr>
+    </table>
+
+
+    <table id="two">
+<!-- 
+        <colgroup style="width:10em; background-color: Gold; border: solid 2px grey;"></colgroup>
+      <colgroup span="2" style="width: 7em; background-color: Yellow; border: solid 2px grey;"></colgroup>
+      <colgroup span="7" style="width: 4em; background-color: LightYellow; border: solid 2px grey;"></colgroup>
+      <thead>
+        <tr>
+          <th>Name</th><th>Origin</th><th>Made with milk from:</th>
+          <th>Calories</th><th>Protein</th><th>Carbs</th>
+          <th>Sugar</th><th>Fat</th><th>Saturates</th><th>salt</th>
+        </tr>
+      </thead> -->
+
+
+       <colgroup style="background-color: springgreen;"></colgroup>
+       <colgroup span="2" style="background-color: yellow;"></colgroup>
+       <colgroup span="7" style="background-color:royalblue"></colgroup>
+
+       <thead>
+           <tr>
+        <th>Name</th><th>Origin</th>
+        <th>Made with milk from</th>
+        <th>Calories</th>
+        <th>Proteins</th>
+        <th>carbs</th>
+        <th>Sugar</th>
+        <th>Fat</th>
+        <th>Saturates</th>
+        <th>Salt</th>
+    </tr>
+       </thead>
+        
+        <!-- <tr>
+            <th>Name</th>
+            <th>Origin</th>
+            <th>Made with milk from</th>
+            <th>Calories</th>
+            <th>Proteins</th>
+            <th>carbs</th>
+            <th>Sugar</th>
+            <th>Fat</th>
+            <th>Saturates</th>
+            <th>Salt</th>
+        </tr> -->
+
+
+        <tr>
+            <td>Brie</td>
+            <td>Russia</td>
+            <td>Cows</td>
+            <td>334</td>
+            <td>21</td>
+            <td>0</td>
+            <td>0</td>
+            <td>28</td>
+            <td>17</td>
+            <td>5</td>
+        </tr>
+        <tr>
+          <td>Axis</td>
+            <td>Spain</td>
+            <td>Buffalo</td>
+            <td>324</td>
+            <td>201</td>
+            <td>3</td>
+            <td>4</td>
+            <td>58</td>
+            <td>17</td>
+            <td>5</td>
+        </tr>
+    </table>
+  </body>
+</html>

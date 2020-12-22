@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- form is created by using form tag <form></form>
+    To crreate an input field we use input tag <input> 
+
+for learning forms - learn about form attributes
+form elements
+input types
+input form attribute
+-->
+    <!-- 
+    create a registration form
+    which includes
+    1. First Name
+    2. Last Name
+    3. Email
+    4. password
+    5. Select Gender
+    6. Select Age
+    7. Submit button 
+    8. Select birth of date 
+    9. Select Languages-->
+
+    <form autocomplete="on">
+      <fieldset>
+        <legend>Registration form</legend>
+
+        <!-- We can set limit for input field for characters by using maxlength attribute -->
+
+
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" placeholder="first" maxlength="7">  <br />
+
+        <label>Password</label>
+        <input type="password" /> <br />
+
+        <label>Email:</label>
+        <input type="email" placeholder="your@example.com" required autocomplete="off" autofocus> <br>
+
+        
+
+        <input type="text" list="names">
+        <datalist id="names">
+        <option value="Sanket">Sanket</option>
+        <option>Samarth</option>
+        <option>Abhijeet</option>
+        <option>Swati</option>
+      </datalist> <br>
+
+      <select>
+        <optgroup label="Backend">Backend</optgroup>
+        <option>Java</option>
+        <option>Spring</option>
+        <option>Database</option>
+
+        <optgroup label="Frontend">Frontend</optgroup>
+        <option>Javascript</option>
+        <option>HTML</option>
+        <option>CSS</option>
+      </select>
+
+      <label>Select Languages</label>
+      
+        <input type="checkbox" />
+        <label>English</label>
+        <input type="checkbox" />
+        <label>Marathi</label>
+        <input type="checkbox" />
+        <label>Hindi</label> <br />
+
+        <label>Select Gender</label>
+        <input type="radio" name="sex" /> <label>Male</label>
+        <input type="radio" name="sex" /> <label>Female</label> 
+        <input type="radio" name="sex"> <label>Other</label><br />
+
+        <input type="submit" style="background-color: teal">
+
+        <button>submit</button><br />
+
+<!-- 
+        We can use restrictions attribute for input field max and min -->
+        <!-- If we want to increase or decrease the value by specific step/value we can use step attribute -->
+        <label>Select Age</label>
+        <input type="number" min="30" max="100" step="10">
+
+
+        <input type="search" />
+        <input type="reset" />
+
+        <input type="time" />
+
+        <input type="date" />
+
+        <input type="month" />
+
+        <input type="range" />
+
+        <input type="file" />
+        <input type="hidden" />
+        <input type="image" />
+
+        <input type="url">
+
+        <input type="text" value="100" readonly> 
+        <!-- readonly attribute - It creates an input field where we can see the input or the 
+        predefined value. We cannot change the data inside the input field. -->
+
+        <input type="text" value="150" disabled>
+
+
+        <!-- <select id="tech" name="tech" size="2" multiple>
+        <option value="java" >Java</option>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option> -->
+
+        <label>Technologies</label>
+
+        <select id="technology" name="technology" size="3" multiple>
+      
+        <optgroup label="Backend">
+        <option>Java</option>
+        <option>Spring</option>
+        <option>Database</option>
+      </optgroup>
+
+      <optgroup label="Frontend">
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>Javascript</option>
+      </optgroup>
+
+      <optgroup label="Deployment">
+        <option>Amazon web services</option>
+        <option>Google Cloud Platform</option>
+        <option>Microsoft cloud platform</option>
+      </optgroup>
+
+      </select>
+
+
+      <select multiple>
+        <optgroup label="Frontend">
+        <option>Javascript</option>
+        <option>HTML</option>
+        <option>CSS</option>
+      </optgroup>
+
+      <optgroup label="Backend">
+        <option>Spring</option>
+        <option>Java</option>
+        <option>Database</option>
+      </optgroup>
+
+      </select>
+
+<input type="text" list="names">      
+<datalist id="names">
+  <option>Omkar</option>
+  <option>Shweta</option>
+  <option>Vaishnavi</option>
+</datalist>
+        
+        <input type="text" id="fname" name="fname" value="John" readonly><br>
+
+        <label>Button</label>
+        <input type="button">
+
+        <button>Click here</button>
+
+
+      </fieldset>
+    </form>
+
+    <!-- Semantics tags - Semantics are the tags with specific meaning regarding to their work
+    <header>
+      <footer>
+        <form>
+          <table>
+            <article>
+              <section>
+                <nav>
+                  <aside>
+                    
+           -->
+  </body>
+</html>
