@@ -138,6 +138,24 @@ background-color: rgb(219, 206, 17);
     background-color: forestgreen;
 }
 
+
+
+header,div,section {
+    border: rgb(251, 255, 0) solid 5px;
+}
+
+[id~="one"]{
+    font-size: 40px;
+}
+
+input,textarea{
+    background-color: crimson;
+}
+
+/* input::placeholder{
+    color: chartreuse;
+} */
+
     </style>
 </head>
 
@@ -166,13 +184,50 @@ element element  descendant selector
 Descendent Selector symbol space 
 syntax: Parent element targrtedelement 
 
+General Sibling Selector/combinator 
+syntax former element ~ targeted element {CSS}
+
+whenever the targeted element comes after the former element 
+The CSS properties is applied to targeted element.
+all the targeted elements which comes after or is preceded by former element. 
+
+
+
+
+Adjacent Sibling Selector/combinator
+
 
 
 Whenever there is similar specificity between element styles. The latest or the last one CSS style would get applied to the elements-->
 
+<!-- 
+Targeting elements by their attribute only.
+[attribute] Selector
+
+Targeting elements by their attribute and exact value.
+[attribute="value"] Selector
+
+Targeting elements by their attribute and exact word (might be separated by white-space).
+[attribute~="value"] Selector
+
+Targeting elements by their attribute and exact value (or the value followed by a hyphen).
+[attribute|="value"] Selector
+
+Targeting elements by their attribute and whose value has a prefix of the exact value.
+[attribute^="value"] Selector
+
+Targeting elements by their attribute and whose value has a suffix of the exact value.
+[attribute$="value"] Selector
+
+Targeting elements by their attribute and whose value has the exact value at least once.
+[attribute*="value"] Selector
+
+Adding i or I makes the search case-insensitive.
+Adding s or S makes the search case-sensitive. -->
 
 
-
+<textarea name="" id="" cols="30" rows="10"></textarea>
+<input type="text" placeholder="Codekul">
     <header class="head">
 
         <h1>
@@ -221,7 +276,7 @@ Whenever there is similar specificity between element styles. The latest or the 
 
     <div>
         <ul>
-            <li id="one">one</li>
+            <li id="section one list">one</li>
             <li>two</li>
             <li>three</li>
         </ul>
