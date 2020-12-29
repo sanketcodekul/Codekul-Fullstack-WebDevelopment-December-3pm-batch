@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Element Selectors</title>
+    <style>
+        p::first-letter{
+            color: fuchsia;
+            font-size: xx-large;
+        }
+
+        p::first-line{
+            font-style: italic;
+            color: green;
+        }
+
+        p::selection{
+            background-color: greenyellow;
+            color: maroon;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Pseudo Element Selectors
+
+    syntax element/selector :: property
+
+    before
+    after
+    selection
+    first-line 
+    first-word -->
+
+    <div>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos
+        neque ea nulla minima, ipsum in, suscipit consequatur alias voluptatum,
+        fuga beatae ipsa voluptatem officia molestiae! Alias, dolorem ad?
+        Voluptatum, eaque?
+      </p>
+    </div>
+  </body>
+</html>

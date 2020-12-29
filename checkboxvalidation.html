@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="p-2">
+      <form onsubmit="return handleData()">
+        Select all the scripting languages you know:
+        <p style="visibility: hidden; color: red" id="chk_option_error">
+          Please select at least one option.
+        </p>
+
+        <input
+          type="checkbox"
+          name="langs[]"
+          id="langs_english"
+          value="English"
+        />
+        <label for="langs_english">English</label>
+
+        <input type="checkbox" name="langs[]" id="langs_hindi" value="Hindi" />
+        <label for="langs_hindi">Hindi</label>
+
+        <input
+          type="checkbox"
+          name="langs[]"
+          id="langs_marathi"
+          value="Marathi"
+        />
+        <label for="langs_marathi">Marathi</label>
+
+        <input type="submit" name="submit" value="Submit" />
+      </form>
+    </div>
+
+    <div class="p-3">
+      <form onsubmit="return validateForm(this)">
+        <div>
+          <input type="checkbox" name="agree" id="agree" value="yes" />
+          <label for="agree">I agree to the terms and conditions</label>
+          <div style="visibility: hidden; color: red" id="agree_chk_error">
+            Can't proceed as you didn't agree to the terms!
+          </div>
+        </div>
+        <div>
+          <input type="submit" name="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+
+    <script>
+      function handleData() {
+        var form_data = new FormData(document.querySelector("form"));
+        if (!form_data.has("langs[]")) {
+          document.getElementById("chk_option_error").style.visibility =
+            "visible";
+          return false;
+        } else {
+          document.getElementById("chk_option_error").style.visibility =
+            "hidden";
+          return true;
+        }
+      }
+
+      function validateForm(form) {
+        console.log("checkbox checked is ", form.agree.checked);
+        if (!form.agree.checked) {
+          document.getElementById("agree_chk_error").style.visibility =
+            "visible";
+          return false;
+        } else {
+          document.getElementById("agree_chk_error").style.visibility =
+            "hidden";
+          return true;
+        }
+      }
+    </script>
+  </body>
+</html>
