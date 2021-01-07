@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* transform property
+        2d transform and 3d transform
+
+        transform syntax: 
+        element {
+            transform: method()
+        }
+
+        2d transform
+        translateX()
+        translateY()
+        translate()
+        rotate()
+        scaleX()
+        scaleY()
+        scale()
+        skewX()
+        skewY()
+        skew()
+        matrix() */
+/* only one transform method can be applied to the element
+The latest or last one transform method will get applied. */
+
+        img{
+            height: 40%;
+            width: 40%;
+            border: solid 3px;
+        }
+
+       #one:hover{
+           transform: translate(200px)
+        
+       } 
+
+       #two:hover{
+           transform: rotate(180deg);
+           transform: translate(300px);
+       }
+
+       #two:hover{
+           transform: translate(200px);
+       }
+
+
+       #three:hover{
+           transform: scaleY(3);
+           
+       }
+
+       #four:hover{
+           transform: scale(3);
+       }
+
+#five:hover{
+    transform: skewY(20deg);
+}
+
+/* transform: matrix() syntanx
+
+transform: matrix(scaleX, skewY, skewX, ScaleY, TranslateX, translateY) */
+
+  #six:hover{
+      transform: matrix(0, 2, 2, 0.4, 0, 0);
+  }  
+
+#seven:hover{
+     transform: scale3d(2, 1, 1);
+}
+  #eight:hover{
+      transform: translateZ(30px);
+  } 
+
+#nine:hover{
+    transform: skew(30deg);
+}
+
+    </style>
+</head>
+<body>
+    <img id="one" src="./images/undraw_Powerful_re_frhr.svg"   alt="">
+    <img id="two" src="./images/img6.jpg"  alt="">
+
+    <img id="three" src="./images/6.jpg" alt="">
+
+    <img id="four" src="./images/img2.jpg" alt="">
+
+    <img id="five" src="./images/img4.jpg" alt="">
+
+    <img id="six" src="./images/colourful-background-vegetables-with-copy-space.jpg" alt="">
+    <img id="seven" src="./images/colourful-background-vegetables-with-copy-space.jpg" alt="">
+
+
+    <img id="eight" src="./images/img1.jpg" alt="">
+
+    <img id="nine" src="./images/quinoa-mushrooms-lettuce-red-cabbage-spinach-cucumbers-tomatoes-bowl-buddha-dark-top-view.jpg" alt="">
+    
+</body>
+</html>
