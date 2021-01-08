@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        
+
+/* .card:hover{
+    transform: rotateY(180deg);
+    position: absolute;
+} */
+
+.front-card:hover{
+    transform: rotateY(180deg);
+    position: absolute;
+
+}
+.back-card:hover{
+    
+   transform: rotateY(180deg);
+   position: absolute;
+    
+}
+        .back-card{
+            /* transform: rotateY(180deg); */
+            background-color: blueviolet;
+             position: absolute;
+             backface-visibility: hidden;
+            
+             transform: rotateY(180deg);
+            
+        }
+        .card{
+            height: 500px;
+            width: 300px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="front-card">
+          <img height="300px" width="300px" src="./images/img4.jpg" alt="" />
+        </div>
+        <div class="back-card">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
+          adipisci soluta error facere quas provident accusantium vel.
+          Cupiditate nihil ipsa excepturi officiis porro voluptas ullam ea quia,
+          blanditiis, reiciendis alias?
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -16,31 +16,49 @@
 
             /* transition:property name duration delay */
 
-            transition: width 3s 2s;
+            transition: width 4s;
 
-            transition: width 3s ease-in 3s;
-            transition: transform 3s;
+            transition: width 4s ease-in 3s;
+            transition: transform 4s;
 
 /* Always give property name and duration. If we dont give duration 
 transition properties will not be affected.
-            transition: property name duration
+            transition: property-name transition-duration
 
-            transition: property name duration easing function
+            transition: property-name transition-duration transition-delay
 
-            transition: property name duration easing function delay */
+            transition: property-name transition-duration transition-timing-function
+
+            transition: property-name transition-duration transition-timing-function transition-delay */
 
 
         }
 
-        div:hover{
+        /* div:hover{
             width: 500px;
             transform: rotate(60deg);
-        }
+            perspective: 300px;
+            perspective-origin: left;
+            
+        } */
 img{
     height: 300px;
     width:300px
 
 
+}
+
+#one{
+    width:200px;
+    background-color: blueviolet;
+    transition: width 4s 3s ease-out;
+}
+
+
+#one:hover{
+    width: 400px;
+
+    transform: rotateY(180deg);
 }
 
 img:hover{
@@ -55,5 +73,8 @@ img:hover{
     </div>
 
     <img src="./images/6.jpg" alt="">
+
+
+    <div id="one">One</div>
 </body>
 </html>
