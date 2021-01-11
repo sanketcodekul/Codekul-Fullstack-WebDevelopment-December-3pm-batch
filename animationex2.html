@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+
+
+
+
+@keyframes textEffect {
+    from{transform: scale(0);}
+    to{transform: scale(2);}
+}
+
+@keyframes RotateImage {
+    0% {transform: rotate();}
+    30% {transform: rotate(30deg); transform: scale(2);}
+    60% {transform: rotate(60deg); transform: scale(0.5);}
+    90% {transform: rotate(30deg); transform: scale(1);}
+    100%{transform: rotate(180deg);}
+    }
+
+    img:hover{
+        animation-play-state:paused;
+    }
+
+img{
+    height: 300px;
+    width: 300px;
+    animation-name: RotateImage;
+    animation-duration: 7s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+.text{
+    width: 300px;
+
+    animation-name: textEffect;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Animation is divided in two parts
+    1. Keyframes - The animation structure for an element is written inside the keyframe.
+    syntax: @keyframe animation_name {
+        CSS structure for animation
+    } 
+
+In keyframes we mention the CSS structure from one state to another state
+we can give it by using two methods
+1.
+from{CSS properties}
+to{CSS properties}
+
+2. By using steps. i.e we can mention various CSS properties at different stages
+0% {}
+30{}
+60%{}
+100% {}
+
+Animation structure in keyframes and then mention animation properties inside the element.
+
+animation-name
+animation-duration
+animation-delay
+animation-iteration-count
+-->
+
+
+    <div class="container">
+        <div class="text">Welcome...!</div>
+
+        <img src="./images/img4.jpg" alt="">
+    </div>
+
+</body>
+</html>

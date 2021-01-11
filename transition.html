@@ -16,10 +16,10 @@
 
             /* transition:property name duration delay */
 
-            transition: width 4s;
+            /* transition: width 3s;
 
             transition: width 4s ease-in 3s;
-            transition: transform 4s;
+            transition: transform 4s; */
 
 /* Always give property name and duration. If we dont give duration 
 transition properties will not be affected.
@@ -51,7 +51,12 @@ img{
 #one{
     width:200px;
     background-color: blueviolet;
-    transition: width 4s 3s ease-out;
+    transition: width 4s 3s ease-in;
+
+    transition-duration: 4s;
+    transition-property: none;
+    transition-delay: 2s;
+    transition-timing-function: ease-out;
 }
 
 

@@ -6,36 +6,29 @@
     <title>Document</title>
     <style>
         
-
-/* .card:hover{
-    transform: rotateY(180deg);
-    position: absolute;
-} */
-
-.front-card:hover{
-    transform: rotateY(180deg);
-    position: absolute;
-
+.container:hover .card{
+  transform: rotateY(180deg);
 }
-.back-card:hover{
-    
-   transform: rotateY(180deg);
-   position: absolute;
-    
+.front-card, .back-card{
+  position: absolute;
+  backface-visibility: hidden;
 }
-        .back-card{
-            /* transform: rotateY(180deg); */
-            background-color: blueviolet;
-             position: absolute;
-             backface-visibility: hidden;
-            
-             transform: rotateY(180deg);
-            
-        }
-        .card{
-            height: 500px;
-            width: 300px;
-        }
+.back-card{
+  background-color: coral;
+  transform: rotateY(180deg);
+}
+.card{
+  height: 300px;
+  width: 300px;
+  transform-style: preserve-3d;
+  transition: transform 2s;
+  
+}
+
+.container{
+  width: 300px;
+  perspective: 600px;
+}
     </style>
   </head>
   <body>
